@@ -1,0 +1,13 @@
+How to launch the AOKP 7 build:
+Download vendor and device from my git.
+Create dirs elephone/p9000 and place them in working_dir/device and in working_dir/vendor
+After copy files from downloaded device in working_dir/device , and from downloaded vendor in working_dir/vendor
+Open terminal and write:
+cd Working_dir
+After apply patches:
+sh device/cyanogen/mt6755-common/patches/install.sh
+Write:
+. build/envsetup.sh
+lunch (select correct buld)
+mka rainbowfarts
+Wait of finish, for me ~2hr with jack

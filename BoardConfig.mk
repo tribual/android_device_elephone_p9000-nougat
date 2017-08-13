@@ -17,9 +17,6 @@ TARGET_BOARD_PLATFORM := mt6755
 
 DEVICE_PATH := device/elephone/p9000
 
-# Disable NINJA
-USE_NINJA := false
-
 MTK_PROJECT_CONFIG ?= $(DEVICE_PATH)/ProjectConfig.mk
 include $(MTK_PROJECT_CONFIG)
 include device/cyanogen/mt6755-common/BoardConfigCommon.mk
@@ -45,7 +42,7 @@ BOARD_MKBOOTIMG_ARGS := --board 1465391499 --ramdisk_offset 0x04f88000 --second_
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/elephone/p9000
-TARGET_KERNEL_CONFIG := flexy_p9000_defconfig
+TARGET_KERNEL_CONFIG := lineage_p9000_defconfig
 
 TARGET_BOOTLOADER_BOARD_NAME := p9000
 

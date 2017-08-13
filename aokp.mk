@@ -14,10 +14,10 @@
 
 $(call inherit-product, device/elephone/p9000/full_p9000.mk)
 
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aokp/configs/common_full_phone.mk)
 
 
-PRODUCT_NAME := lineage_p9000
+PRODUCT_NAME := aokp_p9000
 BOARD_VENDOR := elephone
 PRODUCT_DEVICE := p9000
 
